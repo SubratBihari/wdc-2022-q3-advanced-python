@@ -3,7 +3,7 @@
 from types import Sequence
 
 
-def mysum(numbers: list[float]) -> float:
+def mysum(numbers: Sequence[float]) -> float:
     total: float = 0
 
     for one_number in numbers:
