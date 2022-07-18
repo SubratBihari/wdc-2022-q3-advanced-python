@@ -8,3 +8,11 @@ def hello(name: str) -> str:
 print(hello('world'))
 print(hello(5))
 print(hello([10, 20, 30]))
+
+x = 10
+y = 20
+
+print(x+y)
+
+x = '10'
+print(x+y)
