@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-from typing import Any
+from typing import Union, Sequence
 
 
-def g(x: Any) -> Any:
+def g(x: Union[float | Sequence]) -> Union[float | Sequence]:
     return x * 2
 
 
