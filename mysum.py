@@ -11,6 +11,6 @@ def mysum(numbers: list[float]) -> float:
 
 print(mysum([10, 20, 30]))
 print(mysum([10, 20.5, 30]))
-print(mysum([10, 'a', 30]))
+# print(mysum([10, 'a', 30]))
 print(mysum([10, 20, [1, 2, 3]]))
 print(mysum((100, 200, 300)))
