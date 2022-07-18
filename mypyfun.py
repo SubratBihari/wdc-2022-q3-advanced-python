@@ -3,7 +3,7 @@
 from typing import Union, Sequence, Any
 
 
-def g(x: Union[float | Sequence[str]]) -> Union[float | Sequence[str]]:
+def g(x: Union[int | Sequence[str]]) -> Union[int | Sequence[str]]:
     return x * 2
 
 
