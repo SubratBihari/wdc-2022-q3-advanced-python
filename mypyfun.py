@@ -3,11 +3,11 @@
 from typing import Any
 
 
-def g(x: Any):
+def g(x: Any) -> Any:
     return x * 2
 
 
-def f(y: Any):
+def f(y: Any) -> Any:
     return g(y)
 
 
