@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 
-def g(x):
+from typing import Any
+
+
+def g(x: Any):
     return x * 2
 
 
-def f(y):
+def f(y: Any):
     return g(y)
 
 
