@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+from types import Sequence
+
+
 def mysum(numbers: list[float]) -> float:
     total: float = 0
 
