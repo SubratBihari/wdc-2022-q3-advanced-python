@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from typing import Sequence
+from typing import Sequence    # sequence == string, list, tuple
 
 
 def mysum(numbers: Sequence[float]) -> float:
