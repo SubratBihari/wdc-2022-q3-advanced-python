@@ -23,6 +23,6 @@ with ThreadPoolExecutor() as executor:
         all_futures.append(future)
 
     for one_future in as_completed(all_futures):
-        file_length_total += one_future.result()
+        file_length_total += one_future.result()    # result is a future method
 
 print(f'Total is {file_length_total}')
