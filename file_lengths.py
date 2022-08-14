@@ -24,3 +24,5 @@ with ThreadPoolExecutor() as executor:
 
     for one_result in as_completed(all_results):
         file_length_total += one_result.result()
+
+print(f'Total is {file_length_total}')
