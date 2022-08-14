@@ -16,4 +16,5 @@ with ThreadPoolExecutor() as executor:
         result = executor.submit(hello, args=(i,))
         all_results.append(result)
 
-    print(as_completed(all_results))
+    for one_result in as_completed(all_results):
+        print(one_result.result())
