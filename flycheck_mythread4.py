@@ -2,10 +2,6 @@
 
 # future -- a proxy for an answer that will (eventually) come
 
-import threading
-import time
-import random
-
 from concurrent.futures import ThreadPoolExecutor
 
 
