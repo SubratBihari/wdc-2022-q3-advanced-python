@@ -3,9 +3,12 @@
 # future -- a proxy for an answer that will (eventually) come
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import time
+import random
 
 
 def hello(n):
+    time.sleep(random.randint(0, 3))
     return f'{n} Hello!'
 
 
