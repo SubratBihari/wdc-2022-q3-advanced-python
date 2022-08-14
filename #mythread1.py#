@@ -23,7 +23,8 @@ for i in range(10):
     t.start()
 
 # if we call "join" on a thread object, we wait for it to finish
-for one
+for one_thread in all_threads:
+    one_thread.join()
 
 
 print('Done!')
