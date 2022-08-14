@@ -14,9 +14,10 @@ def file_length(filename):
     return total
 
 
-file_length_total = 0
+if __name__ == '__main__':
+    file_length_total = 0
 
-with ProcessPoolExecutor() as executor:
-    results = executor.map(file_length, glob.glob('*.txt'))
+    with ProcessPoolExecutor() as executor:
+        results = executor.map(file_length, glob.glob('*.txt'))
 
-print(f'Total is {sum(results)}')
+    print(f'Total is {sum(results)}')
