@@ -4,6 +4,12 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
 def file_length(filename):
+    total = 0
+
+    for one_line in open(filename):
+        total += len(one_line)
+
+    return total
 
 
 with ThreadPoolExecutor() as executor:
