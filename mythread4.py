@@ -6,8 +6,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
 def hello(n):
-    print(f'{n} Hello!')
-    print(f'{n} Goodbye!')
+    return f'{n} Hello!'
 
 
 with ThreadPoolExecutor() as executor:
