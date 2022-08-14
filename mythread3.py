@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# print, but use a lock to ensure that the function prints hello/goodbye together
+
 import threading
 import time
 import random
