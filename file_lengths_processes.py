@@ -15,8 +15,6 @@ def file_length(filename):
 
 
 if __name__ == '__main__':
-    file_length_total = 0
-
     with ProcessPoolExecutor() as executor:
         results = executor.map(file_length, glob.glob('*.txt'))
 
