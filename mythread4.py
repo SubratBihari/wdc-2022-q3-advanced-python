@@ -15,13 +15,9 @@ def hello(n):
 
 
 with ThreadPoolExecutor() as executor:
+    all_results = []
     for i in range(10):
         result = executor.submit(hello, args=(i,))
+        all_results.append(result)
 
-
-# if we call "join" on a thread object, we wait for it to finish
-for one_thread in all_threads:
-    one_thread.join()
-
-
-print('Done!')
+    print(all_results)
