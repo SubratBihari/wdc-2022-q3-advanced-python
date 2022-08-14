@@ -6,12 +6,7 @@ import threading
 import time
 import random
 
-from concurrent.future import ThreadPoolExecutor
-
-# print, but use a lock to ensure that the function prints hello/goodbye together
-
-
-l = threading.Lock()            # create a lock object
+from concurrent.futures import ThreadPoolExecutor
 
 
 def hello(n):
