@@ -17,3 +17,5 @@ for i in range(10):
 
     # actually run the function in a new thread
     t.start()
+
+print('Done!')
