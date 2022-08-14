@@ -10,7 +10,7 @@ l = threading.Lock()            # create a lock object
 
 
 def hello(n):
-        time.sleep(random.randint(0, 3))
+    time.sleep(random.randint(0, 3))
     with l:
         print(f'{n} Hello!')
         print(f'{n} Goodbye!')
