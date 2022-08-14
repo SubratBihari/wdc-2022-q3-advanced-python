@@ -2,7 +2,7 @@
 
 # future -- a proxy for an answer that will (eventually) come
 
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
 def hello(n):
