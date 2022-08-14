@@ -17,12 +17,6 @@ def file_length(filename):
 file_length_total = 0
 
 with ThreadPoolExecutor() as executor:
-    all_futures = []
-    for one_filename in glob.glob('*.txt'):
-        future = executor.submit(file_length, one_filename)
-        all_futures.append(future)
-
-    for one_future in as_completed(all_futures):
-        file_length_total += one_future.result()    # result is a future method
+    results = executor.map(file_length, glob.glob('*.txt'))
 
 print(f'Total is {file_length_total}')
