@@ -10,10 +10,8 @@ from concurrent.futures import ThreadPoolExecutor
 
 
 def hello(n):
-    time.sleep(random.randint(0, 3))
-    with l:
-        print(f'{n} Hello!')
-        print(f'{n} Goodbye!')
+    print(f'{n} Hello!')
+    print(f'{n} Goodbye!')
 
 
 all_threads = []
