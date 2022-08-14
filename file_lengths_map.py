@@ -19,4 +19,4 @@ file_length_total = 0
 with ThreadPoolExecutor() as executor:
     results = executor.map(file_length, glob.glob('*.txt'))
 
-print(f'Total is {file_length_total}')
+print(f'Total is {results}')
