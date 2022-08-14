@@ -17,12 +17,12 @@ def file_length(filename):
 file_length_total = 0
 
 with ThreadPoolExecutor() as executor:
-    all_results = []
+    all_futures = []
     for one_filename in glob.glob('*.txt'):
-        result = executor.submit(file_length, one_filename)
-        all_results.append(result)
+        future = executor.submit(file_length, one_filename)
+        all_futures.append(future)
 
-    for one_result in as_completed(all_results):
+    for one_result in as_completed(all_futures):
         file_length_total += one_result.result()
 
 print(f'Total is {file_length_total}')
