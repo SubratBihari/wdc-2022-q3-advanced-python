@@ -13,7 +13,7 @@ q = queue.Queue()
 def hello(n):
     time.sleep(random.randint(0, 3))
     q.put(f'{n} Hello!')
-    print(f'{n} Goodbye!')
+    q.put(f'{n} Goodbye!')
 
 
 all_threads = []
@@ -33,3 +33,7 @@ for one_thread in all_threads:
 
 
 print('Done!')
+
+while not q.empty():
+    print(q.get())
+    
