@@ -10,4 +10,6 @@ def hello():
 for i in range(10):
     # create a thread object, which will run hello
     t = threading.Thread(target=hello)
-    t.start()                           # actually run the function in a new thread
+
+    # actually run the function in a new thread
+    t.start()
